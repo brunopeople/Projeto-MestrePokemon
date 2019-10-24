@@ -11,6 +11,9 @@ Vue.use(VueRouter);
 import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios);
 
+import App from './App.vue';
+Vue.use(VueAxios, axios);
+
 
 import HomeComponent from './components/HomeComponent.vue';
 import CreateComponent from './components/CreateComponent.vue';
@@ -28,7 +31,7 @@ const routes = [
 
 {
 	name: 'create',
-	path: '/posts',
+	path: '/create',
 	component: CreateComponent
 },
 
